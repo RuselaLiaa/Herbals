@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Herbal China Tea Guide | Panduan Teh Herbal Cina</title>
+  <meta name="description" content="Panduan ringkas tentang teh herbal China, cara seduh, jenis herba popular, suhu air, masa rendaman dan tips menikmati teh dengan lebih baik." />
+
+  <style>
+    :root {
+      --jade: #2f5d50;
+      --deep-jade: #18382f;
+      --tea: #caa66a;
+      --paper: #fbf7ee;
+      --cream: #f2eadc;
+      --ink: #2b2520;
+      --muted: #75695e;
+      --line: #e4d4bd;
+      --red: #9f3d32;
+      --white: #fffdf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .announcement {
+      background: var(--deep-jade);
+      color: #f7ead8;
+      padding: 10px 7%;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    header {
+      background: rgba(251, 247, 238, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: radial-gradient(circle at top, var(--tea), var(--jade));
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(47, 93, 80, 0.25);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 23px;
+      color: var(--deep-jade);
+      line-height: 1.1;
+    }
+
+    .brand-text span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      gap: 26px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--deep-jade);
+    }
+
+    nav a:hover {
+      color: var(--red);
+    }
+
+    .hero {
+      min-height: 720px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background:
+        linear-gradient(90deg, rgba(251,247,238,0.96) 0%, rgba(251,247,238,0.88) 46%, rgba(24,56,47,0.18) 100%),
+        url("https://images.unsplash.com/photo-1563911892437-1feda0179e1b?auto=format&fit=crop&w=1500&q=80");
+      background-size: cover;
+      background-position: center right;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border: 1px solid rgba(202,166,106,0.35);
+      border-radius: 50%;
+      left: -120px;
+      top: 120px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: rgba(159,61,50,0.08);
+      border-radius: 50%;
+      right: 12%;
+      bottom: 80px;
+    }
+
+    .hero-content {
+      padding: 95px 7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .kicker {
+      width: fit-content;
+      background: #efe1c8;
+      color: var(--deep-jade);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 0.98;
+      color: var(--deep-jade);
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 620px;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      padding: 15px 25px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .btn-main {
+      background: var(--jade);
+      color: white;
+      box-shadow: 0 12px 26px rgba(47,93,80,0.25);
+    }
+
+    .btn-line {
+      background: transparent;
+      border: 1px solid var(--jade);
+      color: var(--jade);
+    }
+
+    .hero-note {
+      position: absolute;
+      right: 7%;
+      bottom: 55px;
+      width: 330px;
+      background: rgba(255,253,248,0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(228,212,189,0.8);
+      border-radius: 28px;
+      padding: 24px;
+      z-index: 3;
+      box-shadow: 0 20px 45px rgba(24,56,47,0.16);
+    }
+
+    .hero-note h3 {
+      color: var(--deep-jade);
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .hero-note p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 85px 7%;
+    }
+
+    .section-title {
+      max-width: 780px;
+      margin-bottom: 42px;
+    }
+
+    .section-title.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title small {
+      font-family: Arial, sans-serif;
+      color: var(--red);
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .section-title h2 {
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.1;
+      color: var(--deep-jade);
+      margin: 10px 0 14px;
+    }
+
+    .section-title p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .intro-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 38px;
+      box-shadow: 0 18px 40px rgba(47,93,80,0.07);
+    }
+
+    .intro-card h3 {
+      color: var(--deep-jade);
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .intro-card p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .intro-image {
+      position: relative;
+    }
+
+    .intro-image img {
+      width: 100%;
+      border-radius: 34px;
+      display: block;
+      box-shadow: 0 22px 45px rgba(24,56,47,0.18);
+    }
+
+    .seal {
+      position: absolute;
+      left: -22px;
+      bottom: 28px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--red);
+      color: white;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(159,61,50,0.28);
+    }
+
+    .tea-types {
+      background: #f4ead9;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .tea-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .tea-card {
+      background: var(--white);
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      transition: 0.25s;
+    }
+
+    .tea-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 18px 35px rgba(47,93,80,0.11);
+    }
+
+    .tea-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tea-card-content {
+      padding: 24px;
+    }
+
+    .tea-card-content h3 {
+      font-size: 23px;
+      color: var(--deep-jade);
+      margin-bottom: 8px;
+    }
+
+    .tea-card-content p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .brew-layout {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .brew-sidebar {
+      background: var(--deep-jade);
+      color: white;
+      border-radius: 30px;
+      padding: 34px;
+      position: sticky;
+      top: 105px;
+    }
+
+    .brew-sidebar h3 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .brew-sidebar p {
+      font-family: Arial, sans-serif;
+      color: #eadfcf;
+      margin-bottom: 22px;
+    }
+
+    .brew-sidebar .mini-list {
+      display: grid;
+      gap: 12px;
+      font-family: Arial, sans-serif;
+    }
+
+    .mini-list div {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 14px;
+      color: #f8eadb;
+    }
+
+    .steps {
+      display: grid;
+      gap: 18px;
+      counter-reset: brew;
+    }
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px 28px;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .step-number {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #f0dfc5;
+      color: var(--red);
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .step h3 {
+      font-size: 24px;
+      color: var(--deep-jade);
+      margin-bottom: 6px;
+    }
+
+    .step p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .temperature {
+      background:
+        linear-gradient(rgba(24,56,47,0.9), rgba(24,56,47,0.88)),
+        url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .temperature .section-title h2,
+    .temperature .section-title small {
+      color: white;
+    }
+
+    .temperature .section-title p {
+      color: #eadfcf;
+    }
+
+    .temp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .temp-box {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 24px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+    }
+
+    .temp-box strong {
+      display: block;
+      color: var(--tea);
+      font-family: Arial, sans-serif;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .temp-box h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .temp-box p {
+      font-family: Arial, sans-serif;
+      color: #eee0d0;
+      font-size: 15px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .tip {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 28px;
+      display: flex;
+      gap: 18px;
+    }
+
+    .tip-icon {
+      min-width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: #f0dfc5;
+      color: var(--jade);
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      font-weight: 900;
+    }
+
+    .tip h3 {
+      color: var(--deep-jade);
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .tip p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .faq-wrap {
+      background: var(--cream);
+    }
+
+    .faq {
+      max-width: 930px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 24px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--deep-jade);
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    details p {
+      margin-top: 12px;
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    .newsletter {
+      padding: 0 7% 85px;
+      background: var(--cream);
+    }
+
+    .newsletter-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      padding: 55px 35px;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(47,93,80,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter-box::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(202,166,106,0.17);
+      left: -90px;
+      top: -90px;
+    }
+
+    .newsletter-box::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(47,93,80,0.12);
+      right: -70px;
+      bottom: -90px;
+    }
+
+    .newsletter-box h2 {
+      color: var(--deep-jade);
+      font-size: 38px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .newsletter-box p {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      max-width: 660px;
+      margin: 0 auto 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .newsletter-box form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .newsletter-box input {
+      width: 330px;
+      max-width: 100%;
+      padding: 15px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      font-size: 15px;
+      outline: none;
+    }
+
+    .newsletter-box button {
+      padding: 15px 24px;
+      border-radius: 999px;
+      border: none;
+      background: var(--jade);
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--deep-jade);
+      color: #eadfcf;
+      padding: 45px 7%;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 0.8fr;
+      gap: 32px;
+      margin-bottom: 28px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    footer p,
+    footer a {
+      color: #d9cbb7;
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.13);
+      padding-top: 20px;
+      text-align: center;
+      color: #cdbfae;
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      header {
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+
+      .hero,
+      .intro-grid,
+      .brew-layout,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 70px 7%;
+      }
+
+      .hero-note {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin: 0 7% 50px;
+        width: auto;
+      }
+
+      .tea-grid,
+      .temp-grid,
+      .tips-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brew-sidebar {
+        position: static;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+
+      .seal {
+        left: 18px;
+        bottom: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement">
+    Panduan edukasi teh herbal China: jenis herba, cara seduh, suhu air dan tips penyediaan harian.
+  </div>
+
+  <header>
+    <a href="#" class="brand">
+      <div class="brand-mark">茶</div>
+      <div class="brand-text">
+        <strong>Jade Herbal Tea</strong>
+        <span>Chinese Herbal Tea Guide</span>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#jenis">Jenis Herba</a>
+      <a href="#seduh">Cara Seduh</a>
+      <a href="#suhu">Suhu Air</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="kicker">Traditional Tea Guide</div>
+        <h1>Seni Menyeduh Teh Herbal China</h1>
+        <p>
+          Teh herbal China telah lama dinikmati kerana aromanya yang lembut,
+          rasa yang menenangkan dan cara penyediaannya yang penuh perhatian.
+          Panduan ini membantu anda memahami asas memilih herba, suhu air,
+          masa rendaman dan cara menikmati teh dengan lebih baik.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-main" onclick="document.getElementById('seduh').scrollIntoView()">
+            Lihat Cara Seduh
+          </button>
+          <button class="btn btn-line" onclick="document.getElementById('jenis').scrollIntoView()">
+            Kenali Herba
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-note">
+        <h3>Nota Ringkas</h3>
+        <p>
+          Untuk rasa yang lebih seimbang, gunakan air panas yang tidak terlalu mendidih
+          dan biarkan herba mengembang perlahan dalam teko atau cawan.
+        </p>
+      </div>
+    </section>
+
+    <section id="tentang">
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="section-title">
+            <small>Tentang Teh Herbal</small>
+            <h2>Minuman Harian Yang Ringkas & Menenangkan</h2>
+          </div>
+
+          <p>
+            Teh herbal China biasanya menggunakan bunga, daun, akar atau buah kering
+            yang diseduh bersama air panas. Setiap bahan mempunyai aroma dan karakter
+            rasa yang berbeza.
+          </p>
+
+          <p>
+            Ada teh yang terasa ringan dan floral, ada yang lebih earthy, manis natural,
+            atau sedikit pahit. Cara seduhan yang betul membantu mengeluarkan aroma tanpa
+            menjadikan rasa terlalu kuat.
+          </p>
+
+          <p>
+            Laman ini disediakan sebagai panduan umum untuk peminat teh, beginner,
+            atau sesiapa yang ingin belajar cara menyeduh teh herbal dengan lebih kemas.
+          </p>
+        </div>
+
+        <div class="intro-image">
+          <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=80" alt="Teh herbal dalam cawan">
+          <div class="seal">Calm Tea Ritual</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jenis" class="tea-types">
+      <div class="section-title center">
+        <small>Jenis Popular</small>
+        <h2>Herba Yang Sering Digunakan</h2>
+        <p>
+          Berikut beberapa jenis herba yang biasa dijadikan minuman. Anda boleh menyeduh
+          satu jenis herba sahaja atau mencampurkan beberapa bahan mengikut citarasa.
+        </p>
+      </div>
+
+      <div class="tea-grid">
+        <article class="tea-card">
+          <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=900&q=80" alt="Bunga chrysanthemum kering">
+          <div class="tea-card-content">
+            <h3>Chrysanthemum</h3>
+            <p>
+              Mempunyai aroma bunga yang lembut dan warna teh yang cerah.
+              Sesuai diminum panas atau sejuk.
+            </p>
+          </div>
+        </article>
+
+        <article class="tea-card">
+          <img src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?auto=format&fit=crop&w=900&q=80" alt="Goji berry">
+          <div class="tea-card-content">
+            <h3>Goji Berry</h3>
+            <p>
+              Memberi sedikit rasa manis natural dan warna kemerahan yang menarik.
+              Boleh dicampur dengan bunga atau kurma merah.
+            </p>
+          </div>
+        </article>
+
+        <article class="tea-card">
+          <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=900&q=80" alt="Herba kering">
+          <div class="tea-card-content">
+            <h3>Red Date</h3>
+            <p>
+              Kurma merah kering memberi rasa manis ringan dan aroma yang hangat.
+              Sesuai untuk seduhan yang lebih lembut.
+            </p>
+          </div>
+        </article>
+
+        <article class="tea-card">
+          <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&w=900&q=80" alt="Teh dan herba">
+          <div class="tea-card-content">
+            <h3>Osmanthus</h3>
+            <p>
+              Bunga kecil dengan aroma wangi dan rasa floral halus.
+              Selalu digunakan untuk menambah aroma pada campuran teh.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="seduh">
+      <div class="section-title">
+        <small>Cara Penyediaan</small>
+        <h2>Cara Seduh Teh Herbal China</h2>
+        <p>
+          Proses seduhan tidak perlu rumit. Yang penting ialah sukatan bahan,
+          suhu air dan masa rendaman yang sesuai.
+        </p>
+      </div>
+
+      <div class="brew-layout">
+        <aside class="brew-sidebar">
+          <h3>Peralatan Asas</h3>
+          <p>
+            Anda tidak wajib menggunakan set teh tradisional. Cawan kaca, teko kecil
+            atau infuser biasa juga sudah cukup untuk mula.
+          </p>
+
+          <div class="mini-list">
+            <div>Cawan atau teko tahan panas</div>
+            <div>Infuser / penapis teh</div>
+            <div>Air panas bersih</div>
+            <div>Herba kering pilihan</div>
+            <div>Suduk kecil untuk sukatan</div>
+          </div>
+        </aside>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div>
+              <h3>Bilas Herba Dengan Ringkas</h3>
+              <p>
+                Masukkan herba ke dalam cawan atau teko, kemudian bilas dengan sedikit
+                air panas selama beberapa saat. Buang air bilasan pertama jika perlu.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">02</div>
+            <div>
+              <h3>Gunakan Sukatan Yang Sesuai</h3>
+              <p>
+                Untuk satu cawan, gunakan sekitar 1 hingga 2 sudu kecil herba kering.
+                Jika menggunakan campuran bahan, jangan terlalu banyak supaya rasa tidak terlalu kuat.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">03</div>
+            <div>
+              <h3>Tuang Air Panas Perlahan</h3>
+              <p>
+                Gunakan air panas sekitar 85°C hingga 95°C. Elakkan air yang terlalu mendidih
+                untuk bunga yang lembut kerana ia boleh membuat rasa menjadi terlalu tajam.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">04</div>
+            <div>
+              <h3>Rendam 3 Hingga 8 Minit</h3>
+              <p>
+                Masa rendaman bergantung pada jenis herba. Bunga biasanya lebih cepat,
+                manakala akar atau buah kering memerlukan masa sedikit lebih lama.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">05</div>
+            <div>
+              <h3>Tapis & Nikmati Perlahan</h3>
+              <p>
+                Setelah warna dan aroma keluar, tapis teh ke dalam cawan.
+                Nikmati sewaktu panas atau biarkan sejuk dan tambah ais mengikut selera.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="suhu" class="temperature">
+      <div class="section-title center">
+        <small>Panduan Suhu</small>
+        <h2>Suhu Air & Masa Rendaman</h2>
+        <p>
+          Setiap bahan mempunyai karakter yang berbeza. Jadual ringkas ini boleh
+          dijadikan rujukan asas ketika menyeduh.
+        </p>
+      </div>
+
+      <div class="temp-grid">
+        <div class="temp-box">
+          <strong>80–85°C</strong>
+          <h3>Bunga Lembut</h3>
+          <p>
+            Sesuai untuk osmanthus, bunga ringan atau campuran floral.
+            Rendam sekitar 3 hingga 5 minit.
+          </p>
+        </div>
+
+        <div class="temp-box">
+          <strong>85–90°C</strong>
+          <h3>Bunga & Buah</h3>
+          <p>
+            Sesuai untuk chrysanthemum, goji berry dan kurma merah.
+            Rendam sekitar 5 hingga 8 minit.
+          </p>
+        </div>
+
+        <div class="temp-box">
+          <strong>90–95°C</strong>
+          <h3>Akar & Herba Tebal</h3>
+          <p>
+            Sesuai untuk bahan yang lebih keras atau tebal.
+            Rendam sedikit lebih lama supaya aroma keluar dengan baik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title center">
+        <small>Tips Tambahan</small>
+        <h2>Supaya Rasa Teh Lebih Seimbang</h2>
+        <p>
+          Beberapa langkah kecil boleh membantu menghasilkan rasa yang lebih kemas,
+          tidak terlalu pahit dan lebih harum.
+        </p>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip">
+          <div class="tip-icon">✓</div>
+          <div>
+            <h3>Jangan Terlalu Banyak Herba</h3>
+            <p>
+              Herba yang terlalu banyak boleh membuat rasa menjadi terlalu kuat.
+              Mulakan dengan sukatan kecil dahulu.
+            </p>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">✓</div>
+          <div>
+            <h3>Gunakan Bekas Tertutup</h3>
+            <p>
+              Simpan herba dalam bekas kedap udara, jauh daripada cahaya matahari
+              dan tempat yang terlalu lembap.
+            </p>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">✓</div>
+          <div>
+            <h3>Campur Secara Ringkas</h3>
+            <p>
+              Untuk beginner, cukup campurkan 2 hingga 3 bahan sahaja supaya
+              rasa lebih mudah dikawal.
+            </p>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">✓</div>
+          <div>
+            <h3>Ulang Seduhan Jika Sesuai</h3>
+            <p>
+              Sesetengah herba boleh diseduh semula 1 hingga 2 kali.
+              Tambah masa rendaman untuk seduhan kedua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-wrap">
+      <div class="section-title center">
+        <small>FAQ</small>
+        <h2>Soalan Biasa Tentang Teh Herbal</h2>
+        <p>
+          Jawapan ringkas untuk pembaca yang baru ingin mencuba teh herbal China.
+        </p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Boleh minum teh herbal setiap hari?</summary>
+          <p>
+            Untuk minuman ringan seperti chrysanthemum atau goji berry, ramai orang
+            menikmatinya sebagai minuman harian. Namun, pilih sukatan sederhana dan
+            sesuaikan dengan keadaan tubuh masing-masing.
+          </p>
+        </details>
+
+        <details>
+          <summary>Perlu tambah gula atau madu?</summary>
+          <p>
+            Tidak wajib. Sesetengah bahan seperti goji berry dan kurma merah sudah
+            memberi rasa manis natural. Anda boleh tambah sedikit madu jika mahukan
+            rasa yang lebih lembut.
+          </p>
+        </details>
+
+        <details>
+          <summary>Kenapa teh saya terasa pahit?</summary>
+          <p>
+            Mungkin suhu air terlalu tinggi, masa rendaman terlalu lama atau sukatan
+            herba terlalu banyak. Kurangkan sukatan dan cuba rendam dalam masa lebih pendek.
+          </p>
+        </details>
+
+        <details>
+          <summary>Boleh dibuat versi sejuk?</summary>
+          <p>
+            Boleh. Seduh teh seperti biasa, biarkan sejuk, kemudian tambah ais.
+            Untuk rasa lebih ringan, anda boleh cairkan sedikit dengan air sejuk.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-box">
+        <h2>Dapatkan Panduan Teh Setiap Minggu</h2>
+        <p>
+          Terima tips ringkas tentang teh herbal, cara seduh, inspirasi campuran
+          dan ritual minum teh yang lebih santai.
+        </p>
+
+        <form onsubmit="event.preventDefault(); alert('Terima kasih! Email anda berjaya dihantar.');">
+          <input type="email" placeholder="Masukkan email anda" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Jade Herbal Tea</h3>
+        <p>
+          Laman edukasi tentang teh herbal China, cara seduh, suhu air,
+          jenis herba dan tips penyediaan untuk pembaca beginner.
+        </p>
+      </div>
+
+      <div>
+        <h3>Menu</h3>
+        <a href="#tentang">Tentang</a>
+        <a href="#jenis">Jenis Herba</a>
+        <a href="#seduh">Cara Seduh</a>
+        <a href="#suhu">Suhu Air</a>
+      </div>
+
+      <div>
+        <h3>Info</h3>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+        <a href="#">Editorial Guide</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Jade Herbal Tea. Educational Chinese herbal tea guide website.
+    </div>
+  </footer>
+
+</body>
+</html>
